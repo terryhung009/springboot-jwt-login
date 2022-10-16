@@ -8,9 +8,13 @@ import javax.persistence.*;
 import java.util.ArrayList;
 import java.util.Collection;
 
-@Entity @Data @NoArgsConstructor @AllArgsConstructor
+@Entity
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
 public class User {
-  @Id @GeneratedValue(strategy = GenerationType.AUTO)
+  @Id
+  @GeneratedValue(strategy = GenerationType.AUTO)
   private Long id;
   private String name;
   private String username;
